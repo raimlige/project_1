@@ -23,7 +23,7 @@ http.createServer(function(req, res){
         res.writeHead(200, {"Content-type": "text/html"});
         res.write(pageBegin);
         res.write(pageBody);
-        res.write("<p>" + "Täna on " + dateET.longDate() + "\nTäna on " + dateET.weekDay() + "\nKell on " +  dateET.time() + "</p>");
+        res.write("<p>" + "Täna on " + dateET.longDate() + "\n Täna on " + dateET.weekDay() + "\n Kell on " +  dateET.time() + "</p>");
         res.write("<p>" + "Tänane vanarahva tarkus: " + randomWisdom + "</p>");
         res.write(pageEnd);
         return res.end();
